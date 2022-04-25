@@ -44,11 +44,13 @@ public class KthLargest
     if (index < 0)
     {
       // O(n)
+      // Insert at the posiition where we have found the element which is greater than "val".
       container.Insert(~index, val);
     }
     else
     {
       //O(n)
+      // we found the element using BST and we will insert in the found index, why no issue? because the same element will be move to next index
       container.Insert(index, val);
     }
 
